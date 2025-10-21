@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme{
+  /* 🌑 Base Backgrounds */
+  --color-bg-primary: #121212;      /* Main dark background */
+  --color-bg-secondary: #1e1e1e;    /* Slightly lighter, for sections or cards */
+  --color-bg-tertiary: #2a2a2a;     /* Hover / footer background */
+
+  /* 🔥 Reds (Accent + Action Colors) */
+  --color-red-primary: #e50914;     /* Primary red for CTAs */
+  --color-red-secondary: #ff3b3f;   /* Lighter red for hover/glow */
+  --color-red-dark: #b00020;        /* Deep crimson for gradients/shadows */
+
+  /* ⚪ Text Colors */
+  --color-text-primary: #ededed;    /* Main heading text */
+  --color-text-secondary: #b3b3b3;  /* Paragraphs / muted text */
+  --color-text-muted: #7a7a7a;      /* Small labels / footnotes */
+
+  /* 🌫️ Borders / Dividers */
+  --color-border: #2f2f2f;          /* Card borders or dividers */
+  --color-hover-gray: #3a3a3a;      /* Hover backgrounds */
+
+  /* ✨ Shadows / Glow */
+  --color-glow-red: rgba(229, 9, 20, 0.3); /* Subtle red aura for effects */
+
+  /* 🌈 Gradients */
+  --gradient-hero: linear-gradient(135deg, #121212, #1e1e1e 70%, #e50914 130%);
+  --gradient-button: linear-gradient(90deg, #b00020, #e50914);
+  --gradient-card-hover: linear-gradient(180deg, #1e1e1e, #2a2a2a 80%);
+
+  /* ⚙️ Shadows */
+  --shadow-red-glow: 0 0 15px rgba(229, 9, 20, 0.4);
+  --shadow-card: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
