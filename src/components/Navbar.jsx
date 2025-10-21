@@ -15,18 +15,18 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-[#121212]/50 backdrop-blur-sm shadow-md">
+    <nav className="fixed w-full top-0 z-50 bg-dark/50 backdrop-blur-sm shadow-md">
       <div className="max-w-7xl mx-auto px-5 py-3 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center space-x-2 text-[#e50914] text-2xl font-bold">
-          <GiWeightLiftingUp className="text-[#e50914] text-3xl" />
-          <span className="text-[#ededed] font-semibold tracking-wide">
+        <div className="flex items-center space-x-2 text-primary text-2xl font-bold">
+          <GiWeightLiftingUp className="text-primary text-3xl" />
+          <span className="text-light font-semibold tracking-wide">
             FitnessPlanet
           </span>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-[#ededed] font-medium">
+        <ul className="hidden md:flex space-x-8 text-light font-medium">
           {navLinks.map((link) => (
             <li key={link.name}>
               <a
@@ -34,7 +34,7 @@ const Navbar = () => {
                 className="relative group transition-all duration-300"
               >
                 {link.name}
-                <span className="absolute left-0 bottom-[-3px] w-0 h-[2px] bg-[#e50914] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 bottom-[-3px] w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
           ))}
@@ -42,7 +42,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-[#ededed] text-3xl focus:outline-none"
+          className="md:hidden text-light text-3xl focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <HiX /> : <HiMenu />}
@@ -51,11 +51,11 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-[#1e1e1e] transition-all duration-500 overflow-hidden ${
-          menuOpen ? "max-h-96" : "max-h-0"
+        className={`md:hidden bg-dark transition-all duration-500 overflow-hidden ${
+          menuOpen ? "max-h-2/3" : "max-h-0"
         }`}
       >
-        <ul className="flex flex-col items-center py-4 space-y-3 text-[#ededed]">
+        <ul className="flex flex-col items-center py-4 space-y-3 text-light">
           {navLinks.map((link) => (
             <li key={link.name}>
               <a
@@ -64,7 +64,7 @@ const Navbar = () => {
                 className="relative group block px-3 py-2 transition-all duration-300"
               >
                 {link.name}
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#e50914] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
           ))}
