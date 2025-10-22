@@ -16,7 +16,7 @@ const Hero = () => {
           <br className="hidden md:block" />
           Elevate Your <span className="text-primary">Mind</span>
         </h1>
-        <p className="text-[#b3b3b3] text-lg md:text-xl max-w-2xl mx-auto mb-8">
+        <p className="text-gray-50 text-lg md:text-xl max-w-2xl mx-auto mb-8">
           Join FitnessPlanet and redefine your strength, discipline, and
           confidence. Your transformation starts here.
         </p>
