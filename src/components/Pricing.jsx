@@ -18,7 +18,7 @@ const Pricing = () => {
           {pricingPlans.map((plan) => (
             <div
               key={plan.id}
-              className={`relative bg-dark border border-[color-border] rounded-2xl p-8 flex flex-col items-center shadow-[shadow-card] transition-all duration-300 hover:-translate-y-2 w-[70vw] md:w-full mx-auto
+              className={`relative bg-dark border border-[color-border] rounded-2xl p-8 flex flex-col items-center shadow-[shadow-card] transition-all duration-300 hover:-translate-y-2 
               hover:shadow-[0_0_20px_rgba(229,9,20,0.3)]
               ${plan.highlight ? "border-[color-primary] shadow-[0_0_25px_rgba(229,9,20,0.5)]" : ""}
               `}
