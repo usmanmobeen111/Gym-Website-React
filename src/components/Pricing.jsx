@@ -3,7 +3,7 @@ import { pricingPlans } from "../data/pricingData";
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="bg-dark text-light py-20" id="pricing">
+    <section id="pricing" className="bg-dark text-light py-20" >
       <div className="container mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="text-4xl font-bold mb-4">
@@ -14,11 +14,12 @@ const Pricing = () => {
         </p>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {pricingPlans.map((plan) => (
             <div
               key={plan.id}
-              className={`relative bg-dark border border-[color-border] rounded-2xl p-8 flex flex-col items-center shadow-[shadow-card] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(229,9,20,0.3)]
+              className={`relative bg-dark border border-[color-border] rounded-2xl p-8 flex flex-col items-center shadow-[shadow-card] transition-all duration-300 hover:-translate-y-2 w-[70vw] md:w-full mx-auto
+              hover:shadow-[0_0_20px_rgba(229,9,20,0.3)]
               ${plan.highlight ? "border-[color-primary] shadow-[0_0_25px_rgba(229,9,20,0.5)]" : ""}
               `}
             >
