@@ -6,7 +6,7 @@ const Hero = () => {
     <section
       id="home"
       className="relative w-full min-h-screen bg-cover bg-center md:bg-top flex items-center justify-center"
-      style={{ backgroundImage: "url('/hero.jpg')" }}
+      style={{ backgroundImage: "url('/hero.webp')" }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
