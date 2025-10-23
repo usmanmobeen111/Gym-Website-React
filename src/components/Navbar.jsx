@@ -31,7 +31,7 @@ const Navbar = () => {
             <li key={link.name}>
               <a
                 href={link.href}
-                className="relative group transition-all duration-300"
+                className="relative group transition-all hover:text-primary duration-300"
               >
                 {link.name}
                 <span className="absolute left-0 bottom-[-3px] w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -61,7 +61,7 @@ const Navbar = () => {
               <a
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="relative group block px-3 py-2 transition-all duration-300"
+                className="relative group hover:text-primary block px-3 py-2 transition-all duration-300"
               >
                 {link.name}
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>

@@ -18,12 +18,12 @@ const Pricing = () => {
           {pricingPlans.map((plan) => (
             <div
               key={plan.id}
-              className={`relative bg-[var(--color-dark)] border border-[var(--color-border)] rounded-2xl p-8 flex flex-col items-center shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(229,9,20,0.3)]
-              ${plan.highlight ? "border-[var(--color-primary)] shadow-[0_0_25px_rgba(229,9,20,0.5)]" : ""}
+              className={`relative bg-dark border border-[color-border] rounded-2xl p-8 flex flex-col items-center shadow-[shadow-card] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_20px_rgba(229,9,20,0.3)]
+              ${plan.highlight ? "border-[color-primary] shadow-[0_0_25px_rgba(229,9,20,0.5)]" : ""}
               `}
             >
               {plan.highlight && (
-                <span className="absolute top-[-12px] bg-[var(--color-primary)] text-white text-sm font-semibold px-4 py-1 rounded-full">
+                <span className="absolute top-[-12px] bg-primary text-white text-sm font-semibold px-4 py-1 rounded-full">
                   Most Popular
                 </span>
               )}
@@ -44,8 +44,8 @@ const Pricing = () => {
                 className={`w-full py-3 rounded-lg font-semibold transition-all duration-300
                 ${
                   plan.highlight
-                    ? "bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-dark)]"
-                    : "bg-transparent border border-gray-600 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]"
+                    ? "bg-primary text-white hover:bg-primary/90"
+                    : "bg-transparent border border-gray-600 hover:border-primary hover:text-primary"
                 }`}
               >
                 Get Started

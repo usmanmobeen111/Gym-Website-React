@@ -5,12 +5,12 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-[var(--color-dark)] text-[var(--color-whiteish)] py-20 px-6"
+      className="bg-dark text-light py-20 px-6"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[var(--color-primary)] mb-3">
+          <h2 className="text-4xl font-bold text-primary mb-3">
             Get in Touch
           </h2>
           <p className="text-gray-400 text-lg">
@@ -23,7 +23,7 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="flex flex-col justify-center space-y-6">
             <div className="flex items-center gap-4">
-              <FaEnvelope className="text-[var(--color-primary)] text-2xl" />
+              <FaEnvelope className="text-primary text-2xl" />
               <div>
                 <h4 className="font-semibold text-lg">Email</h4>
                 <p className="text-gray-400">support@fitnessplanet.com</p>
@@ -31,7 +31,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <FaPhoneAlt className="text-[var(--color-primary)] text-2xl" />
+              <FaPhoneAlt className="text-primary text-2xl" />
               <div>
                 <h4 className="font-semibold text-lg">Phone</h4>
                 <p className="text-gray-400">+1 (800) 456-7890</p>
@@ -39,7 +39,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <FaMapMarkerAlt className="text-[var(--color-primary)] text-2xl" />
+              <FaMapMarkerAlt className="text-primary text-2xl" />
               <div>
                 <h4 className="font-semibold text-lg">Location</h4>
                 <p className="text-gray-400">
@@ -62,7 +62,7 @@ const Contact = () => {
                 id="name"
                 type="text"
                 placeholder="John Doe"
-                className="w-full bg-[var(--color-dark)] border border-gray-600 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-[var(--color-primary)] transition-all duration-200"
+                className="w-full bg-dark border border-gray-600 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-primary transition-all duration-200"
               />
             </div>
 
@@ -77,7 +77,7 @@ const Contact = () => {
                 id="email"
                 type="email"
                 placeholder="john@example.com"
-                className="w-full bg-[var(--color-dark)] border border-gray-600 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-[var(--color-primary)] transition-all duration-200"
+                className="w-full bg-dark border border-gray-600 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-primary transition-all duration-200"
               />
             </div>
 
@@ -92,13 +92,13 @@ const Contact = () => {
                 id="message"
                 rows="5"
                 placeholder="Tell us how we can help..."
-                className="w-full bg-[var(--color-dark)] border border-gray-600 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-[var(--color-primary)] transition-all duration-200"
+                className="w-full bg-dark border border-gray-600 rounded-lg px-4 py-3 text-gray-200 focus:outline-none focus:border-primary transition-all duration-200"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-[var(--color-primary)] text-white font-semibold py-3 rounded-lg hover:bg-red-600 transition-all duration-300"
+              className="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:bg-red-600 transition-all duration-300"
             >
               Send Message
             </button>

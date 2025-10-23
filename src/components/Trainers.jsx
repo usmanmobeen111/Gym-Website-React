@@ -34,7 +34,7 @@ const Trainers = () => {
                 <h2 className="text-2xl font-semibold text-white">
                   {trainer.name}
                 </h2>
-                <p className="text-primary text-sm mb-2">{trainer.role}</p>
+                <p className="text-primary  text-lg font-semibold mb-2">{trainer.role}</p>
                 <p className="text-gray-300 text-sm italic mb-2">
                   “{trainer.quote}”
                 </p>

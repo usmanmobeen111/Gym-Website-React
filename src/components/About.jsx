@@ -29,7 +29,7 @@ const About = () => {
         {stats.map((item, i) => (
           <div
             key={i}
-            className="flex flex-col items-center justify-center p-6 bg-dark border border-primary/20 
+            className="flex flex-col items-center justify-center p-6 bg-dark border-2 border-primary/20 
                        rounded-xl shadow-lg shadow-black/30 hover:shadow-primary/20 
                        hover:-translate-y-1 transition-all duration-300"
           >

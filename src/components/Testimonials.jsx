@@ -4,14 +4,14 @@ import { testimonials } from "../data/testimonialsData";
 
 const Testimonials = () => {
   return (
-    <section className="bg-[var(--color-dark)] text-[var(--color-whiteish)] py-16 px-6">
+    <section className="bg-dark text-light py-16 px-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
-        <h2 className="text-4xl font-bold text-[var(--color-primary)] mb-4">
-          What Our Members Say
+        <h2 className="text-4xl font-bold text-light mb-4">
+          What Our <span className="text-primary">Members</span> Say
         </h2>
         <p className="text-gray-400 mb-12 text-lg">
-          Every transformation has a story. Here’s what our community says about their journey with <span className="text-[var(--color-primary)] font-semibold">FitnessPlanet</span>.
+          Every transformation has a story. Here’s what our community says about their journey with <span className="text-primary font-semibold">FitnessPlanet</span>.
         </p>
 
         {/* Testimonials Grid */}
@@ -19,13 +19,13 @@ const Testimonials = () => {
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="bg-[var(--color-dark)] border border-gray-700 rounded-2xl p-6 shadow-md hover:shadow-[0_0_25px_rgba(239,68,68,0.4)] transition-all duration-300 flex flex-col items-center text-center"
+              className="bg-dark border border-gray-700 rounded-2xl p-6 shadow-md hover:shadow-[0_0_25px_rgba(239,68,68,0.4)] transition-all duration-300 flex flex-col items-center text-center"
             >
               {/* Image */}
               <img
                 src={t.image}
                 alt={t.name}
-                className="w-20 h-20 rounded-full border-2 border-[var(--color-primary)] object-cover mb-4"
+                className="w-20 h-20 rounded-full border-2 border-primary object-cover mb-4"
               />
 
               {/* Name & Role */}
@@ -42,7 +42,7 @@ const Testimonials = () => {
                 {[...Array(t.rating)].map((_, i) => (
                   <FaStar
                     key={i}
-                    className="text-[var(--color-primary)] w-5 h-5"
+                    className="text-primary w-5 h-5"
                   />
                 ))}
                 {[...Array(5 - t.rating)].map((_, i) => (
