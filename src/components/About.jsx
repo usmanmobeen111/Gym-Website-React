@@ -63,7 +63,7 @@ const About = () => {
           <motion.div
             key={i}
             variants={fadeUp}
-            className="flex flex-col items-center justify-center p-6 bg-dark border-2  border-primary/20 
+            className="flex flex-col items-center justify-center p-6 bg-dark border-2 w-[60vw] md:w-full mx-auto border-primary/20 
                        rounded-xl shadow-lg shadow-black/30 transition-all duration-300"
           >
             {item.icon}

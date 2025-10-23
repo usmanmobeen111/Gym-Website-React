@@ -17,7 +17,7 @@ const Trainers = () => {
           {trainers.map((trainer) => (
             <div
               key={trainer.id}
-              className="relative group bg-[#1b1b1b] rounded-2xl overflow-hidden shadow-lg hover:shadow-[0_0_20px_rgba(229,9,20,0.3)] transition-all duration-300"
+              className="relative group bg-[#1b1b1b] rounded-2xl overflow-hidden shadow-lg hover:shadow-[0_0_20px_rgba(229,9,20,0.3)] transition-all duration-300 w-[70vw] mx-auto md:w-full"
             >
               {/* Trainer Image */}
               <div className="relative">
