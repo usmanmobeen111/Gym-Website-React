@@ -19,7 +19,7 @@ const Testimonials = () => {
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="bg-dark border border-gray-700 rounded-2xl p-6 shadow-md hover:shadow-[0_0_25px_rgba(239,68,68,0.4)] transition-all duration-300 flex flex-col items-center text-center"
+              className="bg-dark border border-gray-700 rounded-2xl p-6 shadow-md hover:shadow-[0_0_25px_rgba(239,68,68,0.4)] transition-all duration-300 flex flex-col items-center w-[70vw] md:w-full mx-auto text-center"
             >
               {/* Image */}
               <img

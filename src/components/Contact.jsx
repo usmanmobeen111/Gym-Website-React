@@ -21,7 +21,7 @@ const Contact = () => {
         {/* Content Grid */}
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <div className="flex flex-col justify-center space-y-6">
+          <div className="flex flex-col justify-center space-y-6 mx-auto md:mx-0">
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-primary text-2xl" />
               <div>
