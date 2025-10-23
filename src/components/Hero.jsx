@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section
+    <section id="home"
       className="relative w-full min-h-screen bg-cover bg-center md:bg-top flex items-center justify-center"
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >

@@ -4,7 +4,7 @@ import { testimonials } from "../data/testimonialsData";
 
 const Testimonials = () => {
   return (
-    <section className="bg-dark text-light py-16 px-6">
+    <section id="testimonials" className="bg-dark text-light py-16 px-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Header */}
         <h2 className="text-4xl font-bold text-light mb-4">

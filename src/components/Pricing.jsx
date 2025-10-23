@@ -3,7 +3,7 @@ import { pricingPlans } from "../data/pricingData";
 
 const Pricing = () => {
   return (
-    <section className="bg-dark text-light py-20" id="pricing">
+    <section id="pricing" className="bg-dark text-light py-20" id="pricing">
       <div className="container mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="text-4xl font-bold mb-4">
